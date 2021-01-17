@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Bell Boeing V22 Osprey : 2007 Maik JUSTUS
+                    Updated : 2010 Oliver Thurau
+                    Updated : 2014 Emmanuel BARANGER
+                    -->
+<airplane mass="50000">
+
+  <approach speed="85" aoa="6">
+    <control-setting axis="/sim/model/v22/solver_throttle" value="0.2"/>
+    <control-setting axis="/sim/model/v22/tilt" value="90"/>
+  </approach>
+
+  <cruise speed="275" alt="15000">
+    <control-setting axis="/sim/model/v22/solver_throttle" value="1"/>
+    <control-setting axis="/sim/model/v22/tilt" value="90"/>
+  </cruise>
+
+  <cockpit x="-1.88" y=".33" z="0.6"/>
+  
+  <!-- main fuselage front-->
+  <fuselage ax=" 8.1" ay=" 0.00" az="-1.90" bx=" 5.80" by=" 0.00" bz="-1.40" width="2.20" taper="0.25" midpoint="1.0" cx="0.150" cy="0.15" cz="0.35" idrag="0"/>
+  <!-- main fuselage center -->
+  <fuselage ax=" 6.0" ay=" 0.00" az="-1.40" bx="-2.50" by=" 0.00" bz="-1.40" width="2.30" taper="0.95" midpoint="0.5" cx="0.350" cy="1.60" cz="0.35" idrag="0"/>
+  
+  <!-- top fuselage -->
+  <fuselage ax=" 1.0" ay=" 0.00" az="-0.80" bx="-2.50" by=" 0.00" bz="-0.80" width="2.30" taper="0.40" midpoint="0.0" cx="0.015" cy="0.15" cz="0.35" idrag="0"/>
+  <fuselage ax=" 3.0" ay=" 0.00" az="-0.80" bx=" 1.00" by=" 0.00" bz="-0.80" width="2.30" taper="1.00" midpoint="0.5" cx="0.015" cy="0.15" cz="0.35" idrag="0"/>
+  <fuselage ax=" 4.0" ay=" 0.00" az="-0.80" bx=" 3.00" by=" 0.00" bz="-0.80" width="2.30" taper="0.40" midpoint="1.0" cx="0.150" cy="0.15" cz="0.35" idrag="0"/>
+  
+  <!-- top fuselage right wingbase-->
+  <fuselage ax=" 3.2" ay="-0.20" az=" 0.00" bx=" 2.20" by="-0.70" bz=" 0.00" width="0.50" taper="0.40" midpoint="1.0" cx="0.015" cy="0.15" cz="0.35" idrag="0"/>
+  <fuselage ax=" 2.2" ay="-0.70" az=" 0.00" bx=" 0.00" by="-0.70" bz=" 0.00" width="0.50" taper="1.00" midpoint="0.5" cx="0.015" cy="0.15" cz="0.35" idrag="0"/>
+  <fuselage ax=" 0.0" ay="-0.70" az=" 0.00" bx="-1.20" by="-0.20" bz="-0.20" width="0.50" taper="0.40" midpoint="0.0" cx="0.015" cy="0.15" cz="0.35" idrag="0"/>
+  
+  <fuselage ax=" 3.2" ay="-0.50" az=" 0.00" bx=" 2.20" by="-1.00" bz=" 0.00" width="0.50" taper="0.40" midpoint="1.0" cx="0.015" cy="0.15" cz="0.35" idrag="0"/>
+  <fuselage ax=" 2.2" ay="-1.00" az=" 0.00" bx=" 0.00" by="-1.00" bz=" 0.00" width="0.50" taper="1.00" midpoint="0.5" cx="0.015" cy="0.15" cz="0.35" idrag="0"/>
+  <fuselage ax=" 0.0" ay="-1.00" az=" 0.00" bx="-1.20" by="-0.40" bz="-0.20" width="0.50" taper="0.40" midpoint="0.0" cx="0.015" cy="0.15" cz="0.35" idrag="0"/>
+  
+  <!-- top fuselage left wingbase-->
+  <fuselage ax=" 3.2" ay=" 0.20" az=" 0.00" bx=" 2.20" by=" 0.70" bz=" 0.00" width="0.50" taper="0.40" midpoint="1.0" cx="0.015" cy="0.15" cz="0.35" idrag="0"/>
+  <fuselage ax=" 2.2" ay=" 0.70" az=" 0.00" bx=" 0.00" by=" 0.70" bz=" 0.00" width="0.50" taper="1.00" midpoint="0.5" cx="0.015" cy="0.15" cz="0.35" idrag="0"/>
+  <fuselage ax=" 0.0" ay=" 0.70" az=" 0.00" bx="-1.20" by=" 0.20" bz="-0.20" width="0.50" taper="0.40" midpoint="0.0" cx="0.015" cy="0.15" cz="0.35" idrag="0"/>
+  
+  <fuselage ax=" 3.2" ay=" 0.50" az=" 0.00" bx=" 2.20" by=" 1.00" bz=" 0.00" width="0.50" taper="0.40" midpoint="1.0" cx="0.015" cy="0.15" cz="0.35" idrag="0"/>
+  <fuselage ax=" 2.2" ay=" 1.00" az=" 0.00" bx=" 0.00" by=" 1.00" bz=" 0.00" width="0.50" taper="1.00" midpoint="0.5" cx="0.015" cy="0.15" cz="0.35" idrag="0"/>
+  <fuselage ax=" 0.0" ay=" 1.00" az=" 0.00" bx="-1.20" by=" 0.40" bz="-0.20" width="0.50" taper="0.40" midpoint="0.0" cx="0.015" cy="0.15" cz="0.35" idrag="0"/>
+  
+  <!-- side fuselage right-->
+  <fuselage ax=" 3.0" ay="-0.75" az="-2.10" bx=" 1.00" by="-1.75" bz="-2.10" width="0.80" taper="1.00" midpoint="0.5" cx="0.015" cy="1.00" cz="0.35" idrag="0"/>
+  
+  <fuselage ax=" 1.2" ay="-1.70" az="-2.10" bx="-1.50" by="-1.70" bz="-2.10" width="0.80" taper="1.00" midpoint="0.5" cx="0.015" cy="1.00" cz="0.35" idrag="0"/>
+  <fuselage ax=" 1.7" ay="-1.00" az="-2.10" bx="-1.50" by="-1.00" bz="-2.10" width="0.80" taper="1.00" midpoint="0.5" cx="0.015" cy="1.00" cz="0.35" idrag="0"/>
+  
+  <fuselage ax="-1.3" ay="-1.70" az="-2.10" bx="-3.80" by="-0.70" bz="-1.60" width="0.80" taper="1.00" midpoint="0.5" cx="0.015" cy="1.00" cz="0.35" idrag="0"/>
+  
+  <!-- side fuselage left-->
+  <fuselage ax=" 3.0" ay=" 0.75" az="-2.10" bx=" 1.00" by=" 1.75" bz="-2.10" width="0.80" taper="1.00" midpoint="0.5" cx="0.015" cy="1.00" cz="0.35" idrag="0"/>
+  
+  <fuselage ax=" 1.2" ay=" 1.70" az="-2.10" bx="-1.50" by=" 1.70" bz="-2.10" width="0.80" taper="1.00" midpoint="0.5" cx="0.015" cy="1.00" cz="0.35" idrag="0"/>
+  <fuselage ax=" 1.7" ay=" 1.00" az="-2.10" bx="-1.50" by=" 1.00" bz="-2.10" width="0.80" taper="1.00" midpoint="0.5" cx="0.015" cy="1.00" cz="0.35" idrag="0"/>
+  
+  <fuselage ax="-1.3" ay=" 1.70" az="-2.10" bx="-3.80" by=" 0.70" bz="-1.60" width="0.80" taper="1.00" midpoint="0.5" cx="0.015" cy="1.00" cz="0.35" idrag="0"/>
+  
+  <!-- back fuselage -->
+  <fuselage ax="-2.3" ay=" 0.00" az="-1.40" bx="-5.00" by="-0.45" bz="-1.03" width="2.20" taper="0.55" midpoint="0.0" cx="0.015" cy="1.00" cz="0.35" idrag="0"/>
+  <fuselage ax="-2.3" ay=" 0.00" az="-1.40" bx="-5.00" by=" 0.00" bz="-1.03" width="2.20" taper="0.55" midpoint="0.0" cx="0.015" cy="1.00" cz="0.35" idrag="0"/>
+  <fuselage ax="-2.3" ay=" 0.00" az="-1.40" bx="-5.00" by=" 0.45" bz="-1.03" width="2.20" taper="0.55" midpoint="0.0" cx="0.015" cy="1.00" cz="0.35" idrag="0"/>
+  
+  <fuselage ax="-4.8" ay="-0.45" az="-1.05" bx="-6.50" by="-0.75" bz="-0.50" width="1.30" taper="0.35" midpoint="0.0" cx="0.015" cy="2.00" cz="0.35" idrag="0"/>
+  <fuselage ax="-4.8" ay=" 0.00" az="-1.05" bx="-6.50" by=" 0.00" bz="-0.50" width="1.30" taper="0.35" midpoint="0.0" cx="0.015" cy="1.00" cz="0.35" idrag="0"/>
+  <fuselage ax="-4.8" ay=" 0.45" az="-1.05" bx="-6.50" by=" 0.75" bz="-0.50" width="1.30" taper="0.35" midpoint="0.0" cx="0.015" cy="1.00" cz="0.35" idrag="0"/>
+  
+  <fuselage ax="-6.4" ay="-0.75" az="-0.51" bx="-7.70" by="-0.75" bz="-0.40" width="0.45" taper="0.35" midpoint="0.0" cx="0.015" cy="1.00" cz="0.35" idrag="0"/>
+  <fuselage ax="-6.4" ay=" 0.00" az="-0.51" bx="-7.70" by=" 0.00" bz="-0.40" width="0.45" taper="0.35" midpoint="0.0" cx="0.015" cy="1.00" cz="0.35" idrag="0"/>
+  <fuselage ax="-6.4" ay=" 0.75" az="-0.51" bx="-7.70" by=" 0.75" bz="-0.40" width="0.45" taper="0.35" midpoint="0.0" cx="0.015" cy="1.00" cz="0.35" idrag="0"/>
+  
+  <!-- main wing -->
+  <wing x="0.90" y="0.4" z="0.30"
+        chord="2.65"
+        chord_real="2.65"
+        taper="1"
+        length_real="6.1"
+        length="6.1"
+        dihedral="1.8"
+        incidence="3.5"
+        camber="0.2"
+        sweep="-8">
+        <stall width="8" aoa="35" peak="1.5"/>
+        <flap0 drag="1.6" end="0.5" lift="2" start="0.02"/>
+        <flap1 drag="1.6" end="0.97" lift="2" start="0.5"/>
+        
+        <control-input control="FLAP0" axis="/sim/model/v22/wing/flap"/>
+        <control-input control="FLAP1" axis="/sim/model/v22/wing/flap"/>
+        <control-input control="FLAP1" split="true" axis="sim/model/v22/wing/aileron"/>
+        
+        <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
+        <control-output control="FLAP1" prop="/surface-positions/left-aileron-pos-norm" side="left"/>
+        <control-output control="FLAP1" prop="/surface-positions/right-aileron-pos-norm" side="right"/>
+  </wing> 
+  
+  <mstab x="-8.40" y="0.0" z="-0.45"
+         taper="1"
+         length="2.50"
+         chord="2.30"
+         sweep="0"
+         incidence="-0.5">
+         <stall aoa="16" width="4" peak="1.5"/>
+         <flap0 drag="1.2" end="1" lift="1.9" start="0"/>
+         
+         <control-input control="FLAP0" axis="/sim/model/v22/wing/elevator"/>
+         <control-output prop="/surface-positions/elevator-pos-norm" control="FLAP0"/>
+  </mstab>
+  
+  <!-- Vertical wing - rudder -->
+  <vstab x="-7.90" y="2.52" z="-1.39"
+         taper="0.4"
+         length="3.20"
+         chord="2.72"
+         sweep="15"
+         incidence="0">
+         <stall aoa="16" width="4" peak="1.5"/>
+         <flap0 drag="1.2" end="1" lift="1.4" start="0.4"/>
+         
+         <control-input control="FLAP0" axis="/sim/model/v22/wing/rudder" invert="true"/>
+         <control-output prop="/surface-positions/rudder-pos-norm" control="FLAP0" min="1" max="-1"/>
+  </vstab>
+  
+  <vstab x="-7.90" y="-2.52" z="-1.39"
+         taper="0.4"
+         length="3.20"
+         chord="2.72"
+         sweep="15"
+         incidence="0">
+         <stall aoa="16" width="4" peak="1.5"/>
+         <flap0 drag="1.2" end="1" lift="1.4" start="0.4"/>
+         
+         <control-input control="FLAP0" axis="/sim/model/v22/wing/rudder" invert="true"/>
+         <control-output prop="/surface-positions/rudder-pos-norm" control="FLAP0" min="1" max="-1"/>
+  </vstab>
+  
+  <!-- main == right rotor (name=main for mp-protocol) -->
+  <!-- tail ==  left rotor (name=tail for mp-protocol) -->
+  <rotor name="main"
+         x="1.57" y="-7.041" z="2.550"
+         nx="0" ny="0" nz="1"
+         fx="1" fy="0" fz="0"
+         ccw="1"
+         maxcollective="180" mincollective="-180"
+         mincyclicele="-90" maxcyclicele="90"
+         mincyclicail="-90" maxcyclicail="90"
+         mintiltpitch="-180" maxtiltpitch="180"
+         tiltcenterx="1.75" tiltcentery="-2.1" tiltcenterz="0.30"
+         mintiltroll="-90" maxtiltroll="90" 
+         diameter="11.58"
+         numblades="3"
+         weightperblade="675"
+         twist="-47.5"
+         chord="0.81"
+         rpm="412"
+         relbladecenter="0.5"
+         dynamic="1"
+         rellenflaphinge="0.13"
+         delta3="-0.26"
+         delta="0.25"
+         pitch-a="10" pitch-b="15"
+         flapmin="-15" flapmax="15"
+         flap0="-2"
+         flap0factor="0"
+         notorque="0"
+         dragfactor="0.30"
+         translift-ve="20"
+         translift-maxfactor="1.3"
+         ground-effect-constant="0.1"
+         taper="1"
+         number-of-segments="8"
+         number-of-parts="8"
+         rel-len-where-incidence-is-measured="0.6"
+         rel-len-blade-start="0.16"
+         airfoil-lift-coefficient="3.15"
+         airfoil-drag-coefficient0="0.38"
+         airfoil-drag-coefficient1="5.5"
+         incidence-stall-zero-speed="65"
+         incidence-stall-half-sonic-speed="55.0"
+         lift-factor-stall="0.45"
+         stall-change-over="11"
+         drag-factor-stall="4.0"
+         cyclic-factor="0.8"
+         rotor-correction-factor="1.7"
+         balance="1"
+         downwashfactor="0.3"
+         phi0="95">
+         <control-input axis="/sim/model/v22/tilt" control="TILTPITCH" src0="-180" src1="180" dst0="1" dst1="-1"/>
+         <control-input axis="/sim/model/v22/rotor/right/elevator" control="CYCLICELE" src0="-90" src1="90" dst0="-1" dst1="1"/>
+         <control-input axis="/sim/model/v22/rotor/right/collective" control="COLLECTIVE" src0="-180" src1="180" dst0="-1" dst1="1"/>
+  </rotor>
+  
+  <rotor name="tail"
+         x="1.57" y="7.041" z="2.550"
+         nx="0" ny="0" nz="1"
+         fx="1" fy="0" fz="0"
+         ccw="0"
+         maxcollective="180" mincollective="-180"
+         mincyclicele="-90" maxcyclicele="90"
+         mincyclicail="-90" maxcyclicail="90"
+         mintiltpitch="-180" maxtiltpitch="180"
+         tiltcenterx="1.75" tiltcentery="2.1" tiltcenterz="0.30"
+         mintiltroll="-90" maxtiltroll="90" 
+         diameter="11.58"
+         numblades="3"
+         weightperblade="675"
+         twist="-47.5"
+         chord="0.81"
+         rpm="412"
+         relbladecenter="0.5"
+         dynamic="1"
+         rellenflaphinge="0.13"
+         delta3="-0.26"
+         delta="0.25"
+         pitch-a="10" pitch-b="15"
+         flapmin="-15" flapmax="15"
+         flap0="-2"
+         flap0factor="0"
+         notorque="0"
+         dragfactor="0.30"
+         translift-ve="20"
+         translift-maxfactor="1.3"
+         ground-effect-constant="0.1"
+         taper="1"
+         number-of-segments="8"
+         number-of-parts="8"
+         rel-len-where-incidence-is-measured="0.6"
+         rel-len-blade-start="0.16"
+         airfoil-lift-coefficient="3.15"
+         airfoil-drag-coefficient0="0.38"
+         airfoil-drag-coefficient1="5.5"
+         incidence-stall-zero-speed="65"
+         incidence-stall-half-sonic-speed="55" 
+         lift-factor-stall="0.45"
+         stall-change-over="11"
+         drag-factor-stall="4.0"
+         cyclic-factor="0.8"
+         rotor-correction-factor="1.7"
+         balance="1"
+         downwashfactor="0.3"
+         phi0="95">
+         <control-input axis="/sim/model/v22/tilt" control="TILTPITCH" src0="-180" src1="180" dst0="1" dst1="-1"/>
+         <control-input axis="/sim/model/v22/rotor/left/elevator" control="CYCLICELE" src0="-90" src1="90" dst0="-1" dst1="1"/>  
+         <control-input axis="/sim/model/v22/rotor/left/collective" control="COLLECTIVE" src0="-180" src1="180" dst0="-1" dst1="1"/>
+  </rotor>
+  
+  <rotorgear max-power-engine-real="9172"
+             max-power-engine="131720"
+             max-power-rotor-brake="4850"
+             rotorgear-friction="30"
+             engine-prop-factor="0.015"
+             engine-accel-limit="4"
+             yasimdragfactor="270"
+             yasimliftfactor="28">
+             <control-input axis="/controls/engines/engine[0]/magnetos" control="ROTORGEARENGINEON"/>
+             <control-input axis="/controls/rotor/brake" control="ROTORBRAKE" src0="0" src1="1" dst0="0" dst1="1"/>
+             <control-input axis="/controls/rotor/reltarget" control="ROTORRELTARGET" src0="0" src1="2" dst0="0" dst1="2"/>
+             <control-input axis="/controls/rotor/maxreltorque" control="ROTORENGINEMAXRELTORQUE" src0="0" src1="2" dst0="0" dst1="2"/>
+  </rotorgear>
+
+  <!-- front gear -->
+  <gear x="7.428" y="0" z="-2.949"
+        compression="0.2"
+        spring="0.65"
+        damp="0.4">
+        <control-input axis="/controls/gear/brake-right" control="BRAKE" split="true"/>
+        <control-input axis="/controls/gear/brake-left" control="BRAKE" split="true"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
+        <control-input axis="/controls/flight/rudder" control="STEER" square="true" src0="-1.0" src1="1.0" dst0="-0.8" dst1="0.8"/>
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+        
+        <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
+        
+        <control-speed control="EXTEND" transition-time="5"/>
+  </gear>
+
+  <!-- left gear -->
+  <gear x="0.467" y="2.101" z="-2.949"
+        compression="0.2"
+        spring="0.65"
+        damp="0.4">
+        <control-input axis="/controls/gear/brake-left" control="BRAKE" split="true"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+        
+        <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
+        
+        <control-speed control="EXTEND" transition-time="5.1"/>
+  </gear>
+
+  <!-- right gear -->
+  <gear x="0.467" y="-2.101" z="-2.949"
+        compression="0.2"
+        spring="0.65"
+        damp="0.4">
+        <control-input axis="/controls/gear/brake-right" control="BRAKE" split="true"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+        
+        <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
+        
+        <control-speed control="EXTEND" transition-time="5.2"/>
+  </gear>
+
+  <!-- CRASH LANDING FX - left skid -->
+  <gear x=" 6.00" y=" 1.000" z="-2.50" skid="1" compression="0.1" spring="0.8" sfric="0.7" dfric="0.6" ignored-by-solver="1"/>
+  <gear x="-2.40" y=" 1.000" z="-2.50" skid="1" compression="0.1" spring="0.8" sfric="0.7" dfric="0.6" ignored-by-solver="1"/>
+  
+  <!-- CRASH LANDING FX - left skid -->
+  <gear x=" 6.00" y="-1.000" z="-2.50" skid="1" compression="0.1" spring="0.8" sfric="0.7" dfric="0.6" ignored-by-solver="1"/>
+  <gear x="-2.40" y="-1.000" z="-2.50" skid="1" compression="0.1" spring="0.8" sfric="0.7" dfric="0.6" ignored-by-solver="1"/>
+  
+  <!-- CRASH FX - right ruder skid -->
+  <gear x="-7.50" y=" 2.500" z="-1.38" skid="1" compression="0.1" spring="0.8" sfric="0.7" dfric="0.6" ignored-by-solver="1"/>
+  <gear x="-9.00" y=" 2.500" z="-1.32" skid="1" compression="0.1" spring="0.8" sfric="0.7" dfric="0.6" ignored-by-solver="1"/>
+  
+  <!-- CRASH FX - left ruder skid -->
+  <gear x="-7.50" y="-2.500" z="-1.38" skid="1" compression="0.1" spring="0.8" sfric="0.7" dfric="0.6" ignored-by-solver="1"/>
+  <gear x="-9.00" y="-2.500" z="-1.32" skid="1" compression="0.1" spring="0.8" sfric="0.7" dfric="0.6" ignored-by-solver="1"/>
+  
+  <!-- CRASH FX - right engine skid ax="1.57" ay="7.041" az="2.550" -->
+  <gear x=" 2.52" y="-7.441" z="-1.87" skid="1" compression="0.1" spring="0.8" sfric="0.7" dfric="0.6" ignored-by-solver="1"/>
+  <gear x=" 1.40" y="-7.241" z="-1.87" skid="1" compression="0.1" spring="0.8" sfric="0.7" dfric="0.6" ignored-by-solver="1"/>
+  
+  <!-- CRASH FX - left engine skid ax="1.57" ay="7.041" az="2.550" -->
+  <gear x=" 2.52" y="+7.441" z="-1.87" skid="1" compression="0.1" spring="0.8" sfric="0.7" dfric="0.6" ignored-by-solver="1"/>
+  <gear x=" 1.40" y="+7.241" z="-1.87" skid="1" compression="0.1" spring="0.8" sfric="0.7" dfric="0.6" ignored-by-solver="1"/>
+  
+  <!-- Forward sponson Fuel tank -->
+  <tank x="1.70" y=" 1.4" z="-2.10" capacity="75"/>
+  <tank x="1.70" y="-1.4" z="-2.10" capacity="75"/>
+  
+  <!-- Wing feeder tank -->
+  <tank x="1.90" y=" 5.8" z=" 0.30" capacity="75"/>
+  <tank x="1.90" y="-5.8" z=" 0.30" capacity="75"/>
+  
+  <!-- Wing aux tank -->
+  <tank x="1.90" y=" 3.6" z=" 0.10" capacity="75"/>
+  <tank x="1.90" y="-3.6" z=" 0.10" capacity="75"/>
+  
+  <!-- work around bug in native-fdm.cxx:184 -->
+  <tank x="0" y="0" z="0" capacity="0"/>
+  
+  <!-- ballast corections overall plane--> 
+  <ballast x=" 4.25" y=" 0" z="-2.5" mass=" 9500"/>
+  <ballast x="-8.00" y=" 0" z=" 0.5" mass="-9800"/> 
+  
+  <!-- engine weight: 971 lbs, add some lbs for hydraulics and -->
+  <ballast x=" 1.91" yr=" 6" y=" 7" z="0.39" mass="1000"/>
+  <ballast x=" 1.91" yr="-6" y="-7" z="0.39" mass="1000"/>
+  
+  <!-- gear weight: 230 lbs, add some lbs for hydraulics and -->
+  <ballast x=" 7.10" yr=" 0" y=" 0.0" z="-2.20" mass="180"/>
+  <ballast x="-1.10" yr=" 6" y=" 2.1" z="-2.40" mass="230"/>
+  <ballast x="-1.10" yr="-6" y="-2.1" z="-2.40" mass="230"/>
+  
+  <!-- pilot -->
+  <weight x="6.0" y=" 0.6" z="-1.3" mass-prop="/sim/weight[0]/weight-lb"/>
+  <!-- co-pilot -->
+  <weight x="6.0" y="-0.6" z="-1.3" mass-prop="/sim/weight[1]/weight-lb"/>
+  <!-- right passenger -->
+  <weight x="4.2" y=" 0.6" z="-1.5" mass-prop="/sim/weight[2]/weight-lb"/>
+  <!-- left passenger -->
+  <weight x="4.2" y="-0.6" z="-1.5" mass-prop="/sim/weight[3]/weight-lb"/>
+  <!-- load -->
+  <weight x="0.2" y=" 0.0" z="-1.9" mass-prop="/sim/weight[4]/weight-lb"/>
+  
+  <!-- pushback -->
+  <thruster x="7.105" y="0" z="-3.212"
+            vx="1" vy="0" vz="0"
+            thrust="5200">
+            <control-input axis="/sim/model/pushback/target-speed-fps" control="THROTTLE" src0="-1" src1="1" dst0="-1" dst1="1"/>
+  </thruster>
+  
+  <hitch name="aerotow"
+         x="-3.1" y="0" z="-2.525"
+         force-is-calculated-by-other="0">
+         <tow length="30"
+              weight-per-meter="0.035"
+              elastic-constant="9000"
+              break-force="80000"
+              mp-auto-connect-period="0"/>
+         <winch max-tow-length="100"
+                min-tow-length="30"
+                initial-tow-length="30"/>
+         <control-input axis="/controls/aerotow/find-aircraft" control="FINDAITOW"/>
+  </hitch>
+  
+</airplane>

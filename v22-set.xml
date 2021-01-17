@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="v22-base.xml">
+
+  <sim>
+
+    <description>Bell Boeing V22 Osprey (Yasim)</description>
+    <author>BARANGER Emmanuel (3D), Maik Justus (FDM), Oliver Thurau (3D and FDM upgrade)</author>
+    <status>alpha</status>
+    <aircraft-version>0.3</aircraft-version>
+    <flight-model>yasim</flight-model>
+    <aero>v22</aero>
+
+    <rating>
+      <FDM type="int">     3 </FDM>
+      <systems type="int"> 2 </systems>
+      <cockpit type="int"> 2 </cockpit>
+      <model type="int">   3 </model>
+    </rating>
+
+  </sim>
+
+</PropertyList>

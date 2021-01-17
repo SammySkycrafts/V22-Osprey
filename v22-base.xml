@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <sim include="Systems/views.xml">
+
+    <description>Bell Boeing V22 Osprey (Yasim)</description>
+    <author>BARANGER Emmanuel (3D), Maik Justus (FDM), Oliver Thurau (3D and FDM upgrade)</author>
+    <status>alpha</status>
+    <aircraft-version>0.3</aircraft-version>
+
+    <startup>
+      <splash-texture>Aircraft/V22-Osprey/v22-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path>Aircraft/V22-Osprey/Sounds/v22-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/V22-Osprey/Models/v22.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+      <v22>
+        <state type="int"> 0 </state>
+        <wing_state type="int"> 0 </wing_state>
+        <blade_folding type="float"> 0 </blade_folding>
+        <wing_rotation type="float"> 0 </wing_rotation>
+        <tilt type="float"> 0 </tilt>
+        <animation_tilt type="float"> 0 </animation_tilt>
+        <inputflaps type="float"> 0 </inputflaps>
+        <inputtilt type="float"> 0 </inputtilt>
+        <wingfoldincidence type ="float"> 0 </wingfoldincidence>
+        <wing>
+          <elevator type ="float"> 0 </elevator>
+          <aileron type="float"> 0 </aileron>
+          <rudder type="float"> 0 </rudder>
+          <flap type="float"> 0 </flap>
+        </wing>
+        <rotor>
+          <left>
+            <elevator type="float"> 0 </elevator>
+            <collective type="float"> 0 </collective>
+          </left>
+          <right>
+            <elevator type="float"> 0 </elevator>
+            <collective type="float"> 0 </collective>
+          </right>
+        </rotor>
+        <engine_right type="float">0.0</engine_right>
+        <engine_left type="float">0.0</engine_left>
+        <rotor-step-deg type="float"> -1.0 </rotor-step-deg>
+        <solver_throttle type="float">  0 </solver_throttle>
+        <wing_rotation_speed type ="float"> 0 </wing_rotation_speed>
+        <flap_speed type="float"> 0 </flap_speed>
+        <blade_folding_speed type="float"> 0 </blade_folding_speed>
+        <animation_tilt_speed type="float"> 0 </animation_tilt_speed>
+        <flight_computer>
+        <roll>
+          <p type ="float"> 1 </p>
+          <i type ="float"> 0 </i>
+          <d type ="float"> 1 </d>
+          <target_abs type ="float"> 0.004 </target_abs>
+          <target_rate type ="float"> 0.0015 </target_rate>
+          <max_i type ="float"> 0.5 </max_i>
+          <out type ="float"> 0 </out>
+          <enabled type ="int"> 1 </enabled>
+          <last_delta type ="float">0</last_delta>
+          <integral type="float">0</integral>
+        </roll>
+        <pitch>
+          <p type ="float"> 1 </p>
+          <i type ="float"> 0 </i>
+          <d type ="float"> 130 </d>
+          <target_abs type ="float"> -0.01 </target_abs>
+          <target_rate type ="float"> 0.0001 </target_rate>
+          <max_i type ="float"> 0.5 </max_i>
+          <out type ="float"> 0 </out>
+          <enabled type ="int"> 1 </enabled>
+          <last_delta type ="float">0</last_delta>
+          <integral type="float">0</integral>
+        </pitch>
+        </flight_computer>
+      </v22>
+    </model>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int type="int" n="0">  0 </int>                                              <!--  0 immat -->
+        <int type="int" n="1">  0 </int>                                              <!--  1 immat -->
+        <int type="int" n="2">  0 </int>                                              <!--  2 immat -->
+        <int type="int" n="3">  0 </int>                                              <!--  3 immat -->
+        <int type="int" n="4">  0 </int>                                              <!--  4 immat -->
+        <int type="int" n="5">  0 </int>                                              <!--  5 immat -->
+        <int type="bool" n="6"> 1 </int>                                              <!-- 6 smoke/bomb/torpedo -->
+        <int type="int" n="7">  0 </int>                                              <!-- 7 color -->
+        <int type="int" n="8" alias="/systems/electrical/outputs/nav-lights">0</int>  <!-- 8 nav-lights -->
+        <int type="int" n="9" alias="/sim/model/lights/beacon/state">false</int>      <!-- 9 strobe-lights -->
+        <float n="0"/>
+        <float n="1"/>
+        <float n="2"/>
+        <float n="3"/>
+        <float n="4" alias="/sim/model/door-positions/crew/position-norm"/>
+        <float n="5" alias="/sim/model/door-positions/passenger/position-norm"/>
+        <float n="6" alias="/position/gear-agl-m"/>
+        <float n="7" alias="/position/altitude-ft"/>
+        <float n="8" alias="/position/altitude-agl-ft"/>
+        <float n="9" alias="/rotors/tail/rpm"/>
+        <float n="10" alias="/sim/model/v22/rotor/left/collective"/>
+        <float n="11" alias="/sim/model/v22/rotor/right/collective"/>
+        <float n="12" alias="/sim/model/v22/animation_tilt"/>
+        <float n="13" alias="/rotors/main/blade[0]/position-deg"/>
+        <!-- For Bombable -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>
+        <string n="9" type="string" />
+      </generic>
+    </multiplay>
+    
+    <help include="Systems/help.xml"/>
+
+    <flaps>
+      <setting>0.00</setting> <!-- Cruise -->
+      <setting>0.33</setting> <!--  -->
+      <setting>0.66</setting> <!--  -->
+      <setting>1.00</setting> <!-- Full -->
+    </flaps>
+
+    <menubar include="Dialogs/v22-menu.xml"/>
+
+  </sim>
+
+  <input>
+    <keyboard include="Systems/v22-keyboard.xml"/>
+  </input>
+
+  <rotors>
+    <main>
+      <rpm type="double">0</rpm>
+      <blade>
+        <position-deg type="float">0</position-deg>
+        <incidence-deg type="float">0</incidence-deg>
+      </blade>
+    </main>
+  </rotors>
+
+  <surface-positions>
+    <flap-pos-norm type="float"> 0 </flap-pos-norm>
+  </surface-positions>
+
+  <nasal>
+    <doors>
+      <file>Aircraft/V22-Osprey/Nasal/doors.nas</file>
+    </doors>
+    <v22>
+      <file>Aircraft/V22-Osprey/Nasal/v22.nas</file>
+      <file>Aircraft/V22-Osprey/Nasal/immat.nas</file>
+      <file>Aircraft/V22-Osprey/Nasal/light.nas</file>
+      <file>Aircraft/V22-Osprey/Nasal/liveries.nas</file>
+    </v22>
+    <efis>
+      <file>Aircraft/V22-Osprey/Nasal/P1000.nas</file>
+    </efis>
+  </nasal>
+
+</PropertyList>

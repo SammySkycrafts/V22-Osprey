@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <title>Bell Boeing V22 Osprey - Background and Help</title>
+  <line></line>
+  <line>Informations about the V22 Osprey</line>
+  <line></line>
+  <key>
+    <name>}</name>
+    <desc>Start Engines</desc>
+  </key>
+  <key>
+    <name>{</name>
+    <desc>Stop Engines</desc>
+  </key>
+  <key>
+    <name>m</name>
+    <desc>Tilt Rotors fwd by 10 deg</desc>
+  </key>
+  <key>
+    <name>M</name>
+    <desc>Tilt Rotors aft by 10 deg</desc>
+  </key>
+  <key>
+    <name>Alt-m</name>
+    <desc>Tilt Rotors vertical</desc>
+  </key>
+  <key>
+    <name>n</name>
+    <desc>Unfold Wing</desc>
+  </key>
+  <key>
+    <name>N</name>
+    <desc>Fold Wing</desc>
+  </key>
+  <text>
+    The tilt range is -10deg .. 0deg (vertical) .. 90deg (horitzontal)
+    The allowed tilt range is a function of the aircrafts speed.
+    The flight computer limits the actual tilt to this range.
+    Therefore you can lift of with vertical rotors and accelerate
+    like a helicopter.
+    The computer will increase the tilt with increasing airspeed.
+    For faster acceleration set the tilt to the maximum.
+    The Osprey can hover within a range of -10deg to 30deg.
+    You can set the tilt to horizontal/90deg on ground. Due to the
+    lack of speed the tilt is limited to 30deg max.
+  </text>
+
+</PropertyList>
