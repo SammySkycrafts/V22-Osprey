@@ -87,7 +87,7 @@
 
     <multiplay>
       <chat_display>1</chat_display>
-      <generic> 
+      <generic>
         <int type="int" n="0">  0 </int>                                              <!--  0 immat -->
         <int type="int" n="1">  0 </int>                                              <!--  1 immat -->
         <int type="int" n="2">  0 </int>                                              <!--  2 immat -->
@@ -117,7 +117,9 @@
         <string n="9" type="string" />
       </generic>
     </multiplay>
-    
+
+
+
     <help include="Systems/help.xml"/>
 
     <flaps>
@@ -130,6 +132,28 @@
     <menubar include="Dialogs/v22-menu.xml"/>
 
   </sim>
+
+  <payload>
+         <armament>
+             <models>Aircraft/V22-Osprey/Models/emesary/</models>
+             <MLW-count>0</MLW-count>
+             <msg type="bool">false</msg>
+         </armament>
+         <d-config>
+             <full_damage_dist_m type="double">3</full_damage_dist_m>
+             <use_hitpoints_instead_of_failure_modes_bool type="bool">false</use_hitpoints_instead_of_failure_modes_bool>
+             <hp_max type="double">80</hp_max>
+             <hitable_by_air_munitions type="bool">true</hitable_by_air_munitions>
+             <hitable_by_cannon type="bool">true</hitable_by_cannon>
+             <is_fleet type="bool">false</is_fleet>
+             <rwr_to_screen type="bool">true</rwr_to_screen>
+             <rwr_audio_extended type="bool">false</rwr_audio_extended>
+             <tacview_supported type="bool">false</tacview_supported>
+             <m28_auto type="bool">false</m28_auto>
+             <mlw_max type="double">2.25</mlw_max>
+             <auto_flare_caller type="bool">true</auto_flare_caller>
+         </d-config>
+     </payload>
 
   <input>
     <keyboard include="Systems/v22-keyboard.xml"/>
@@ -153,6 +177,13 @@
     <doors>
       <file>Aircraft/V22-Osprey/Nasal/doors.nas</file>
     </doors>
+    <damage>
+        <file>Aircraft/V22-Osprey/Nasal/damage.nas</file>
+    </damage>
+    <notifications>
+        <file>Aircraft/V22-Osprey/Nasal/ArmamentNotification.nas</file>
+        <file>Aircraft/V22-Osprey/Nasal/GeoBridgedTransmitter.nas</file>
+    </notifications>
     <v22>
       <file>Aircraft/V22-Osprey/Nasal/v22.nas</file>
       <file>Aircraft/V22-Osprey/Nasal/immat.nas</file>
