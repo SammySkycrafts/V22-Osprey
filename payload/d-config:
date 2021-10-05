@@ -1,0 +1,11 @@
+full_damage_dist_m = 3
+use_hitpoints_instead_of_failure_modes_bool = false
+hp_max = 80
+hitable_by_air_munitions = true
+hitable_by_cannon = true
+is_fleet = false
+rwr_to_screen = true
+tacview_supported = false
+m28_auto = false
+mlw_max = 2.25
+auto_flare_caller = true
